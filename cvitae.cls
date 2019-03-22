@@ -16,28 +16,27 @@
 \usepackage{fontspec}
 \setmainfont[
   Color = primary,
-  Path = fonts/lato/,
-  BoldItalicFont = Lato-RegIta,
-  BoldFont = Lato-Reg,
-  ItalicFont = Lato-LigIta
-] {Lato-Lig}
+  BoldItalicFont = Lato-BoldItalic,
+  BoldFont = Lato-Bold,
+  ItalicFont = Lato-LightItalic,
+  SmallCapsFont = Lato-Regular
+] {Lato}
 
 \setsansfont[
   Scale = MatchLowercase,
   Mapping = tex-text,
-  Path = fonts/raleway/
-] {Raleway-ExtraLight}
+] {Lato-Medium}
 
 %   Name (heading)
 \newcommand{\namesection}[2]{
   \centering{
     \fontsize{25pt}{25pt}
-    \fontspec[Path = fonts/lato/]{Lato-Lig}
+    \fontspec{Lato-Bold}
     \selectfont
     #1 % Name
     \\[5pt]
     \color{headings}
-    \fontspec[Path = fonts/raleway/]{Raleway-Medium}
+    \fontspec{Lato-Medium}
     \fontsize{11pt}{14pt}
     \selectfont
     #2 % contact and web page
@@ -58,7 +57,7 @@
 % Section titles (Profile, Skills, etc).
 \titleformat{\section}{
   \color{headings}
-  \fontspec[Path = fonts/lato/]{Lato-Lig}
+  \fontspec{Lato-Light}
   \fontsize{16pt}{24pt}
   \selectfont
   \raggedright
@@ -68,7 +67,7 @@
 % Company names
 \newcommand{\company}[1]{
   \color{subheadings}
-  \fontspec[Path = fonts/lato/]{Lato-Bol}
+  \fontspec{Lato-Bold}
   \fontsize{12pt}{12pt}
   \selectfont\uppercase {#1}
   \normalfont
@@ -78,8 +77,7 @@
 \newcommand{\descript}[1]{
   \color{subheadings}
   \raggedright
-  \scshape
-  \fontspec[Path = fonts/raleway/]{Raleway-Medium}
+  \fontspec{Lato-Medium}
   \fontsize{11pt}{13pt}
   \selectfont {#1 \\}
   \normalfont
@@ -89,7 +87,7 @@
 \newcommand{\location}[1]{
   \color{headings}
   \raggedright
-  \fontspec[Path = fonts/raleway/]{Raleway-Medium}
+  \fontspec{Lato-Medium}
   \fontsize{10pt}{12pt}
   \selectfont {#1\\}
   \normalfont
