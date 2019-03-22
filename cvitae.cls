@@ -14,15 +14,12 @@
 \definecolor{headings}{HTML}{6A6A6A} % The color of the large sections
 \definecolor{subheadings}{HTML}{333333} % The color of subsections and places worked/studied
 
-%----------------------------------------------------------------------------------------
 %	FONTS
 %----------------------------------------------------------------------------------------
+\usepackage{fontspec} % Custom fonts in XeLaTeX
+\setmainfont[Color=primary, Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
 
-\usepackage{fontspec} % Required for specifying custom fonts in XeLaTeX
-
-\setmainfont[Color=primary, Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig} % The primary font for content text; defines bold, italic and bold-italic as well
-
-%----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
 %	LAST UPDATED COMMAND
 %----------------------------------------------------------------------------------------
 
